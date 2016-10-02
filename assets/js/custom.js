@@ -155,48 +155,66 @@
          * Contact form ajax
         /* ---------------------------------------------- */
 
-        $('#contact-form').submit(function(e) {
+        // $('#contact-form').submit(function(e) {
 
-            e.preventDefault();
+        //     e.preventDefault();
 
-            var c_name = $('#c_name').val();
-            var c_email = $('#c_email').val();
-            var c_message = $('#c_message ').val();
-            var responseMessage = $('#contact-form .ajax-response');
+        //     var name = $('#name').val(); //*
+        //     var company = $('#company').val();
+        //     var email = $('#email').val(); //*
+        //     var phone = $('#phone').val(); //*
+        //     var work = $('#work').val(); //*
+        //     var message = $('#message').val();
 
-            if ((c_name == '' || c_email == '' || c_message == '') || (!isValidEmailAddress(c_email))) {
-                responseMessage.fadeIn(500);
-                responseMessage.html('<i class="fa fa-warning"></i> Please fix the errors and try again.');
-            } else {
-                $.ajax({
-                    type: 'POST',
-                    url: 'assets/php/contactForm.php',
-                    dataType: 'json',
-                    data: {
-                        c_email: c_email,
-                        c_name: c_name,
-                        c_message: c_message
-                    },
-                    beforeSend: function(result) {
-                        $('#contact-form button').empty();
-                        $('#contact-form button').append('<i class="fa fa-cog fa-spin"></i> Wait...');
-                    },
-                    success: function(result) {
-                        if (result.sendstatus == 1) {
-                            $('#contact-form .ajax-hidden').fadeOut(500);
-                            responseMessage.html(result.message).fadeIn(500);
-                        } else {
-                            $('#contact-form button').empty();
-                            $('#contact-form button').append('<i class="fa fa-retweet"></i> Try again.');
-                            responseMessage.html(result.message).fadeIn(1000);
-                        }
-                    }
-                });
-            }
+        //     var responseMessage = $('#contact-form .ajax-response');
 
-            return false;
+        //     if ((name === "" || email === "" || phone === "" || work === "") ||
+        //         (!isValidEmailAddress(email))) {
+        //         responseMessage.fadeIn(500);
+        //         responseMessage.html('<i class="fa fa-warning"></i> Please fix the errors and try again.');
+        //     } else {
+        //         $.ajax({
+        //             type: 'POST',
+        //             url: 'https://docs.google.com/forms/d/e/1FAIpQLScuZAKH_x9TdlszJ3dk-sCitqTc4Mj2CCeBJmo9L9glOdQtMQ/formResponse',
+        //             dataType: 'json',
+        //             data: {
+        //                 "entry.1161612865": name,
+        //                 "entry.705609605": company,
+        //                 "entry.173233556": email,
+        //                 "entry.1953145441": phone,
+        //                 "entry.861706508": work,
+        //                 "entry.1761916069": message
+        //             },
+        //             beforeSend: function(result) {
+        //                 $('#contact-form button').empty();
+        //                 $('#contact-form button').append('<i class="fa fa-cog fa-spin"></i> Wait...');
+        //             },
+        //             success: function(result) {
+        //                 console.log("ajax success");
+        //                 console.log(result);
 
-        });
+        //                 // if (result.sendstatus == 1) {
+        //                 //     $('#contact-form .ajax-hidden').fadeOut(500);
+        //                 //     responseMessage.html(result.message).fadeIn(500);
+        //                 // } else {
+        //                 //     $('#contact-form button').empty();
+        //                 //     $('#contact-form button').append('<i class="fa fa-retweet"></i> Try again.');
+        //                 //     responseMessage.html(result.message).fadeIn(1000);
+        //                 // }
+        //             },
+        //             error: function(e) {
+        //                 console.log("ajax error");
+        //                 console.log(e);
+        //             }
+        //         }).done(function(data) {
+        //             $('#contact-form .ajax-hidden').fadeOut(500);
+        //             responseMessage.html("已成功送出您的訊息，我們的將會盡快與您連繫。謝謝 !!").fadeIn(500);
+        //         });
+        //     }
+
+        //     return false;
+
+        // });
 
         /* ---------------------------------------------- /*
          * Google Map

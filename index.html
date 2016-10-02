@@ -423,41 +423,69 @@
                         <h2 class="module-title">Contact 聯絡我們</h2>
                         <div class="module-line"></div>
                         <div class="module-subtitle">
-                            <img src="/assets/images/UnderConstruction.gif" alt="UnderConstruction" title="UnderConstruction" />
+                            晴天，非外在，而是心情！ <br> 告訴象晴您的需求，讓我們一同帶著愉快的心，完成每件最重要的專案！
                         </div>
                         <div class="module-line"></div>
                     </div>
                 </div>
             </div>
-            <!--<div class="row">
+            <div class="row">
 
                 <div class="col-sm-6 col-sm-offset-3">
 
-                    <form id="contact-form" role="form">
+                    <form id="contact-form" role="form" method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLScuZAKH_x9TdlszJ3dk-sCitqTc4Mj2CCeBJmo9L9glOdQtMQ/formResponse">
                         <div class="ajax-hidden">
                             <div class="form-group wow fadeInUp">
-                                <label class="sr-only" for="c_name">Name</label>
-                                <input type="text" id="c_name" class="form-control" name="c_name" placeholder="Name">
+                                <label class="sr-only" for="name">*姓名</label>
+                                <input type="text" id="name" class="form-control" name="entry.1161612865" placeholder="*姓名" required="required">
                             </div>
 
                             <div class="form-group wow fadeInUp" data-wow-delay=".1s">
-                                <label class="sr-only" for="c_email">Email address</label>
-                                <input type="email" id="c_email" class="form-control" name="c_email" placeholder="E-mail">
+                                <label class="sr-only" for="company">公司名稱</label>
+                                <input type="text" id="company" class="form-control" name="entry.705609605" placeholder="公司名稱">
                             </div>
 
                             <div class="form-group wow fadeInUp" data-wow-delay=".2s">
-                                <textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Your message"></textarea>
+                                <label class="sr-only" for="email">*E-mail</label>
+                                <input type="email" id="email" class="form-control" name="entry.173233556" placeholder="*E-mail" required="required">
                             </div>
 
-                            <button type="submit" class="btn btn-block btn-custom-2 wow fadeInUp" data-wow-delay=".3s">Send it
+                            <div class="form-group wow fadeInUp" data-wow-delay=".3s">
+                                <label class="sr-only" for="phone">*連絡電話</label>
+                                <input type="text" id="phone" class="form-control" name="entry.1953145441" placeholder="*連絡電話" required="required">
+                            </div>
+
+                            <div class="form-group wow fadeInUp" data-wow-delay=".4s">
+                                <label class="sr-only" for="work">*需求項目</label>
+
+                                <select name="entry.861706508" id="work" class="form-control" size="1" required="required">
+                                    <option value="">*需求項目</option>
+                                    <option value="包裝設計">包裝設計</option>
+                                    <option value="產品型錄">產品型錄</option>
+                                    <option value="書籍編排">書籍編排</option>
+                                    <option value="活動文宣">活動文宣</option>
+                                    <option value="婚卡.喜帖設計">婚卡.喜帖設計</option>
+                                    <option value="印刷">印刷</option>
+                                    <option value="其他">其他</option>
+                                </select>
+
+                            </div>
+
+                            <div class="form-group wow fadeInUp" data-wow-delay=".5s">
+                                <textarea class="form-control" id="message" name="entry.1761916069" rows="7" placeholder="訊息"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-block btn-custom-2 wow fadeInUp" data-wow-delay=".3s">送出
 							</button>
                         </div>
-                        <div class="ajax-response"></div>
+                        <div class="ajax-response">
+                            <i class="fa fa-warning"></i> * 為必填(選)欄位
+                        </div>
                     </form>
 
                 </div>
 
-            </div>-->
+            </div>
         </div>
     </section>
 
