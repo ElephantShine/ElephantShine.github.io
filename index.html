@@ -63,19 +63,9 @@
         </div>
     </div>
 
-    <section id="home" class="module-image js-height-full">
-
-        <!--<div class="intro">
-            <div class="hello">Hello, my name is John Doe and</div>
-            <h1>I am Front-End Developer</h1>
-            <div class="who-creates">creating modern and responsive design for Web and Mobile</div>
-        </div>-->
-
-        <div class="mouse-icon">
-            <div class="wheel"></div>
-        </div>
-
-    </section>
+    <div id="main">
+        <my-home></my-home>
+    </div>
 
     <header class="header">
 
@@ -532,6 +522,15 @@
         <a href="#home"><i class="fa fa-angle-double-up"></i></a>
     </div>
 
+
+    <template id="myHome">
+        <section id="home" class="module-image js-height-full">
+            <div class="mouse-icon">
+                <div class="wheel"></div>
+            </div>
+        </section>
+    </template>
+
     <script src="assets/js/jquery-1.11.1.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
@@ -546,6 +545,20 @@
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/custom-shuffle-init.js"></script>
+
+    <script src="assets/js/vue/vue.js"></script>
+
+    <script>
+        
+        Vue.component("my-home", {
+            template : "#myHome"
+        });
+        
+        var vm = new Vue({
+             el: "#main"
+        });
+
+    </script>
 
 </body>
 
