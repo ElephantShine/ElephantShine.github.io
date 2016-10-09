@@ -554,7 +554,7 @@ textarea.form-control {
 
 .side-image {
     position: absolute;
-    background: url(../images/about.jpg) scroll center no-repeat;
+    background: url(../images/about.png) scroll center no-repeat;
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
