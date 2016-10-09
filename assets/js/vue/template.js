@@ -1,90 +1,4 @@
 
-var navs = [
-    { href : "home", text : "Home" },
-    { href : "about", text : "About" },
-    { href : "services", text : "Service" },
-    // { href : "portfolio", text : "Work" },
-    { href : "contact", text : "Contact" }
-];
-
-var about = {
-    title : "About 象晴設計",
-    content : "象，有驚人的記憶力；<br>\
-晴，是每一天的生活！<br>\
-<br>\
-歡迎光臨 象晴設計！ <br>\
-在這兒，晴天非外在，而是心情；<br>\
-讓咱們一同帶著愉快的心，完成每件最重要的專案！<br>\
-<br>\
-NICE to MEET YOU！<br>"
-};
-
-var service = {
-    title : "Service 服務好周到",
-    content : "象晴設計不斷的進化演進，提供完整的專業服務，效率滿載<br>為每一專案形塑極大化的價值。",
-    services : [
-        { title : "LOGO設計", icon : "icon-badge", content : "品牌命名‧視覺設計" },
-        { title : "形象設計", icon : "icon-emoticon-smile", content : "識別延伸‧廣宣品設計" },
-        { title : "包裝設計", icon : "icon-present", content : "產品包裝‧禮盒設計" },
-        { title : "活動文宣", icon : "icon-camera", content : "海報設計‧活動旗幟" },
-        { title : "產品型錄", icon : "icon-book-open", content : "產品攝影‧型錄編排" },
-        { title : "書籍編排", icon : "icon-notebook", content : "封面設計‧內頁編排" },
-        { title : "婚卡喜帖", icon : "icon-heart", content : "客製化婚卡及喜帖" },
-        { title : "印刷輸出", icon : "icon-flag", content : "紙類印刷‧大圖輸出" }
-    ]
-};
-
-var portfolio = {
-    title : "Work 作品集",
-    portfolios : [
-        { 
-            service : "book", 
-            name : "NSO-DerRingdesNibelungen",
-            desc : "NSO歌劇神話~尼貝龍指環"
-        },
-        {
-            service : "logo", 
-            name : "Flower-Fruit-Downshifting",
-            desc : "花果慢活 Flower·Fruit·Downshifting"
-        },
-        {
-            service : "logo", 
-            name : "Interior-Flower-Life",
-            desc : "青晨花實 Interior·Flower·Life"
-        },
-        {
-            service : "logo", 
-            name : "Jojos-Bridal-Atelier",
-            desc : "JOJO's BRIDAL ATELIER 法式手工婚紗"
-        },
-        {
-            service : "book", 
-            name : "Taiwan-Ocean",
-            desc : "文建會~水下文化資產叢書"
-        }
-    ],
-    servicesFilter : [ "book", "logo" ]
-};
-
-var contact = {
-    title : "Contact 歡迎來作客",
-    content : "大象，擁有超強的記憶力。歡迎您留下資本資料，讓我們記住您，並與你聯繫！<br>象晴設計‧誠摯款待！"
-}
-
-var footer = {
-    copyright : "© 2016 象晴設計 ElephantShine, All Rights Reserved.",
-    socials : [
-        { name: "fb", href : "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Felephantshine.cf", title : "Share on Facebook", delay : "", icon : "fa-facebook" },
-        { name: "tr", href : "https://twitter.com/intent/tweet?source=http%3A%2F%2Felephantshine.cf&amp;text=:%20http%3A%2F%2Felephantshine.cf", title : "Share on Tweet", delay : ".1s", icon : "fa-twitter" },
-        { name: "g+", href : "https://plus.google.com/share?url=http%3A%2F%2Felephantshine.cf", title : "Share on Google+", delay : ".2s", icon : "fa-google-plus" },
-    ]
-}
-
-var serviceMapping = {
-    book : "書籍編排",
-    logo : "LOGO.名片設計"
-}
-
 var portfolioMounted = function(){
     var $portfolioContainer = $('.portfolio-items-container'),
 		$imgs = $portfolioContainer.find('img'),
@@ -156,11 +70,7 @@ Vue.component("c-home",
             $(".banner-height-full").height($(window).height());
         });
 
-        $('#home').backstretch([
-            'assets/images/home01.png',
-            'assets/images/home02.png',
-            'assets/images/home03.png'
-        ], { duration: 3000, fade: 750 });
+        $('#home').backstretch(homeImgs, { duration: 3000, fade: 750 });
     }
 });
 
@@ -325,11 +235,19 @@ Vue.component("c-portfolio-item",
     },
     methods : {
         popup : function(){
-            
+
+            this.$emit("input", this.portfolio.name);
+
             $.magnificPopup.open({
                 items: {
                     src: '#custom-content',
                     type: 'inline'
+                },
+                callbacks : {
+                    close: function(){
+                        console.log("close");
+                        $('.portfolio-slider').data('owlCarousel').destroy();
+                    }
                 }
             });
         }
@@ -375,13 +293,20 @@ Vue.component("c-portfolio",
         <ul class="portfolio-items-container">\
             <li is="c-portfolio-item"\
                 v-for="portfolio in portfolios"\
-                :portfolio="portfolio"></li>\
+                :portfolio="portfolio"\
+                v-model="clickPortfolioName"></li>\
         </ul>\
     </section>',
+    // props : [ "currentPopup" ],
     data : function(){
         return portfolio;
     },
-    mounted : portfolioMounted
+    mounted : portfolioMounted,
+    watch : {
+        "clickPortfolioName" : function(){
+            this.$emit("input", this.clickPortfolioName);
+        }
+    }
 })
 
 Vue.component("c-contact-form",
@@ -581,26 +506,32 @@ Vue.component("c-portfolio-detaiil",
             </div>\
         </section>\
     </div>',
-    data : function(){
-        return {
-            service : "LOGO.名片設計",
-            title : "花果慢活 Flower·Fruit·Downshifting",
-            desc : '<p>是位單純、有想法女孩兒，希望結合無毒蔬果和花藝，提醒人們放慢腳步，提升生活的品質。</p>\
-            <p>在聊天的過程中，挺有趣的，時而討論視覺風格，時而為彼此的生活理念加油打氣。</p>\
-            <p>花果慢活的蔬果可都是經過合格檢驗的呦，目前有番茄.小黃瓜.玉米.哈密瓜......，好吃又健康!</p>\
-            <p>啊，對了，提醒大家，需要的話要先預約喔，不然可是買不到der~ <a href="https://www.facebook.com/%E8%8A%B1%E6%9E%9C%E6%85%A2%E6%B4%BB-Flower-Fruit-Downshifting-946658895383638/" target="_blank">(花果慢活 Flower · Fruit · Downshifting)</a></p>',
-            imgs : [ "01.jpg", "02.jpg", "03.jpg", "04.jpg" ],
-            imgFolder : "Flower-Fruit-Downshifting"
+    props : [ "portfolio" ],
+    computed : {
+        service : function(){           
+            return this.portfolio.service;
+        },
+        title : function(){
+            return this.portfolio.title;
+        },
+        desc : function(){
+            return this.portfolio.desc;
+        },
+        imgs : function(){
+            return this.portfolio.imgs;
+        },
+        imgFolder : function(){
+            return this.portfolio.imgFolder;
         }
     },
-    mounted : function() {
+    updated : function(){        
         $('.portfolio-slider').owlCarousel({
-			navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-			navigation: true,
-			pagination: false,
-			slideSpeed : 300,
-			paginationSpeed : 400,
-			singleItem: true
-		});
+            navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+            navigation: true,
+            pagination: false,
+            slideSpeed : 300,
+            paginationSpeed : 400,
+            singleItem: true
+        });
     }
 })

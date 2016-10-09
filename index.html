@@ -63,11 +63,11 @@
         <c-header></c-header>  
         <c-about></c-about>
         <c-service></c-service>     
-        <!--<c-portfolio></c-portfolio>   -->
+        <c-portfolio v-model="currentPopup"></c-portfolio>   
         <c-contact></c-contact>
         <c-footer></c-footer>
         <c-scrollup></c-scrollup>
-        <c-portfolio-detaiil></c-portfolio-detaiil>
+        <c-portfolio-detaiil :portfolio="portfolio"></c-portfolio-detaiil>
     </div>    
 
     <script src="assets/js/jquery-1.11.1.min.js"></script>
@@ -83,13 +83,16 @@
     <script src="assets/js/custom.js?v=20161010"></script>
     
     <script src="assets/js/vue/vue.js"></script>    
+    <script src="assets/js/vue/data.js?v=20161010"></script>
     <script src="assets/js/vue/template.js?v=20161010"></script>
 
-    <script>      
+    <script>          
+        
         var vm = new Vue({
             el: "#main",
             data : {
-                currentPopup : ""
+                currentPopup : "",
+                portfolio : ""
             },
             mounted: function(){
 
@@ -105,7 +108,10 @@
                     mobile: false
                 });
                 wow.init();
-            }
+            },
+            beforeUpdate : function(){
+                this.portfolio = portfolios[this.currentPopup];
+            },
         });
     </script>
 
