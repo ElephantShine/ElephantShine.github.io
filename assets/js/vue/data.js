@@ -66,9 +66,9 @@ var contact = {
 var footer = {
     copyright : "© 2016 象晴設計 ElephantShine, All Rights Reserved.",
     socials : [
-        { name: "fb", href : "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Felephantshine.cf", title : "Share on Facebook", delay : "", icon : "fa-facebook" },
-        { name: "tr", href : "https://twitter.com/intent/tweet?source=http%3A%2F%2Felephantshine.cf&amp;text=:%20http%3A%2F%2Felephantshine.cf", title : "Share on Tweet", delay : ".1s", icon : "fa-twitter" },
-        { name: "g+", href : "https://plus.google.com/share?url=http%3A%2F%2Felephantshine.cf", title : "Share on Google+", delay : ".2s", icon : "fa-google-plus" },
+        { name: "fb", href : "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.elephantshine.com", title : "Share on Facebook", delay : "", icon : "fa-facebook" },
+        { name: "tr", href : "https://twitter.com/intent/tweet?source=http%3A%2F%2Fwww.elephantshine.com&amp;text=:%20http%3A%2F%2Fwww.elephantshine.com", title : "Share on Tweet", delay : ".1s", icon : "fa-twitter" },
+        { name: "g+", href : "https://plus.google.com/share?url=http%3A%2F%2Fwww.elephantshine.com", title : "Share on Google+", delay : ".2s", icon : "fa-google-plus" },
     ]
 }
 
