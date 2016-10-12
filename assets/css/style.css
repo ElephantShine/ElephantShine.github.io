@@ -620,7 +620,7 @@ textarea.form-control {
 
 #filter li:hover,
 #filter li.active {
-    background: #222;
+    background: #683B93;
     color: #fff;
 }
 
@@ -910,8 +910,11 @@ button.mfp-close {
 }
 
 .social-links a:hover {
-    border: 1px solid rgba(255, 255, 255, .5);
-    color: rgba(255, 255, 255, .5);
+    /*border: 1px solid rgba(255, 255, 255, .5);
+    color: rgba(255, 255, 255, .5);*/
+
+    border: 1px solid rgba(111, 0, 196, .8);
+    color: rgba(111, 0, 196, .8);
 }
 
 

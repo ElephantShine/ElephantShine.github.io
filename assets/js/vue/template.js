@@ -217,20 +217,25 @@ Vue.component("c-portfolio-item",
     </li>',
     props : [ "portfolio" ],
     computed:{
-        groups : function(){
-            return "all " + this.portfolio.service;
+        groups : function(){           
+            return "all " + this.portfolio.services.join(" ");;
         },
         imgTitle : function(){
             return this.portfolio.desc + " Portfolio";
         },
         imgSrc : function(){
-            return "portfolio/images/{{name}}/portfolio-item.jpg".replace("{{name}}", this.portfolio.name);
+            return "portfolio/images/{{name}}/portfolio-item.png".replace("{{name}}", this.portfolio.name);
         },
         href : function(){
             return "portfolio/{{name}}.html".replace("{{name}}", this.portfolio.name);
         },
         serviceCht: function(){
-            return serviceMapping[this.portfolio.service]
+
+            var serviceCht = this.portfolio.services.map(function(service) {
+                return serviceMapping[service];
+            });
+
+            return serviceCht.join("、");
         }
     },
     methods : {

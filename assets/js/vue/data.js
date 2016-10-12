@@ -44,18 +44,13 @@ var portfolio = {
     title : "Work 作品集",
     portfolios : [
         {
-            service : "logo", 
+            services : [ "logo", "print" ], 
             name : "Flower-Fruit-Downshifting",
-            desc : "花果慢活 Flower·Fruit·Downshifting"
-        },
-        {
-            service : "logo", 
-            name : "Interior-Flower-Life",
-            desc : "青晨花實 Interior·Flower·Life"
+            desc : "以樸拙的筆劃構成，表現單純、自然，帶出放慢腳步、無毒蔬果之品牌精神。"
         }
     ],
-    servicesFilter : [ "book", "logo" ],
-    clickPortfolioName : "123"
+    servicesFilter : [ "logo", "print" ],
+    clickPortfolioName : ""
 };
 
 var contact = {
@@ -74,18 +69,16 @@ var footer = {
 
 var serviceMapping = {
     book : "書籍編排",
-    logo : "LOGO設計"
+    logo : "LOGO設計",
+    print : "印刷輸出"
 }
 
 var portfolios = {
     "Flower-Fruit-Downshifting" : {
-        service : "LOGO設計",
+        service : "LOGO設計、印刷輸出",
         title : "花果慢活 Flower·Fruit·Downshifting",
-        desc : '<p>是位單純、有想法女孩兒，希望結合無毒蔬果和花藝，提醒人們放慢腳步，提升生活的品質。</p>\
-        <p>在聊天的過程中，挺有趣的，時而討論視覺風格，時而為彼此的生活理念加油打氣。</p>\
-        <p>花果慢活的蔬果可都是經過合格檢驗的呦，目前有番茄.小黃瓜.玉米.哈密瓜......，好吃又健康!</p>\
-        <p>啊，對了，提醒大家，需要的話要先預約喔，不然可是買不到der~ <a href="https://www.facebook.com/%E8%8A%B1%E6%9E%9C%E6%85%A2%E6%B4%BB-Flower-Fruit-Downshifting-946658895383638/" target="_blank">(花果慢活 Flower · Fruit · Downshifting)</a></p>',
-        imgs : [ "01.jpg", "02.jpg", "03.jpg", "04.jpg" ],
+        desc : "以樸拙的筆劃構成，表現單純、自然，帶出放慢腳步、無毒蔬果之品牌精神。",
+        imgs : [ "01.png", "02.png", "03.png", "04.png" ],
         imgFolder : "Flower-Fruit-Downshifting"
     },
     "Interior-Flower-Life" : {
