@@ -9,7 +9,7 @@ var navs = [
     { href : "home", text : "Home" },
     { href : "about", text : "About" },
     { href : "services", text : "Service" },
-    // { href : "portfolio", text : "Work" },
+    { href : "portfolio", text : "Work" },
     { href : "contact", text : "Contact" }
 ];
 

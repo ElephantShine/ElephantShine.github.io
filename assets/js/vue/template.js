@@ -78,12 +78,20 @@ Vue.component("c-nav",
 {
     template : 
     '<li>\
-        <a :href="hrefText">{{text}}</a>\
+        <a :href="hrefText" @click.prevent="anchorClick">{{text}}</a>\
     </li>',
     props:[ "href", "text" ],
     computed:{
         hrefText : function(){
             return "#" + this.href;
+        }
+    },
+    methods: {
+        anchorClick : function(event){
+            var anchor = $(event.target);
+            $('html, body').stop().animate({
+                scrollTop: $(anchor.attr('href')).offset().top
+            }, 1000);
         }
     }
 });
