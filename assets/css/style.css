@@ -318,8 +318,8 @@ textarea.form-control {
 }
 
 .btn-custom-2 {
-    background: #49e2d6;
-    border: 1px solid #49e2d6;
+    background: #683B93;
+    border: 1px solid #683B93;
     color: #fff;
 }
 
@@ -327,8 +327,8 @@ textarea.form-control {
 .btn-custom-2:focus,
 .btn-custom-2:active,
 .btn-custom-2.active {
-    background: #222;
-    border-color: #222;
+    background: #6F00C4;
+    border-color: #6F00C4;
     color: #fff;
 }
 
@@ -448,7 +448,7 @@ textarea.form-control {
 }
 
 .module-line {
-    background: #49e2d6;
+    background: #6F00C4;
     width: 55px;
     height: 1px;
     margin: 30px auto;
@@ -944,6 +944,7 @@ button.mfp-close {
 .navbar-custom .navbar-nav>li>a,
 .navbar-custom .navbar-nav .dropdown-menu>li>a {
     font-size: 11px;
+    font-weight: bold;
     letter-spacing: 3px;
     color: #222;
 }
@@ -954,7 +955,7 @@ button.mfp-close {
 .navbar-custom .navbar-nav>li.active a {
     background: none;
     outline: 0;
-    color: #49e2d6;
+    color: #6F00C4;
 }
 
 .navbar-custom .navbar-brand {
