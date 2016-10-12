@@ -48,7 +48,7 @@ var utility = {
 Vue.component("c-preloader",
 {
     template : 
-    '<div id="preloader">\
+    '<div id="preloader" v-once>\
         <div id="status">\
             <div class="status-mes"></div>\
         </div>\
@@ -58,7 +58,7 @@ Vue.component("c-preloader",
 Vue.component("c-home", 
 {
     template : '\
-    <section id="home" class="module-image banner-height-full">\
+    <section id="home" class="module-image banner-height-full" v-once>\
         <div class="mouse-icon">\
             <div class="wheel"></div>\
         </div>\
@@ -99,7 +99,7 @@ Vue.component("c-nav",
 Vue.component("c-header",
 {
     template : 
-    '<header class="header">\
+    '<header class="header" v-once>\
         <nav class="navbar navbar-custom" role="navigation">\
             <div class="container">\
                 <div class="navbar-header">\
@@ -142,7 +142,7 @@ Vue.component("c-header",
 Vue.component("c-about",
 {
     template : 
-    '<section id="about" class="module">\
+    '<section id="about" class="module" v-once>\
         <div class="row position-relative margin-0">\
             <div class="col-xs-12 col-md-6 side-image"></div>\
             <div class="col-xs-12 col-md-6 col-md-offset-6 side-image-text">\
@@ -167,7 +167,7 @@ Vue.component("c-about",
 Vue.component("c-service-item",
 {
     template : 
-    '<div class="col-sm-3">\
+    '<div class="col-sm-3" v-once>\
         <div class="iconbox wow bounceIn">\
             <div class="iconbox-icon">\
                 <span :class="service.icon"></span>\
@@ -184,7 +184,7 @@ Vue.component("c-service-item",
 Vue.component("c-service",
 {
     template :
-    '<section id="services" class="module">\
+    '<section id="services" class="module" v-once>\
         <div class="container">\
             <div class="row">\
                 <div class="col-sm-6 col-sm-offset-3">\
@@ -215,7 +215,7 @@ Vue.component("c-portfolio-item",
         <figure>\
             <img :src="imgSrc" :alt="imgTitle">\
             <figcaption>\
-                <a :href="href" class="simple-ajax-popup" @click.prevent="popup"></a>\
+                <a :href="href" class="ajax-popup"></a>\
                 <div class="caption-inner">\
                     <h3 class="portfolio-item-title">{{serviceCht}}</h3>\
                     <div class="portfolio-item-desc">{{portfolio.desc}}</div>\
@@ -245,25 +245,6 @@ Vue.component("c-portfolio-item",
 
             return serviceCht.join("、");
         }
-    },
-    methods : {
-        popup : function(){
-
-            this.$emit("input", this.portfolio.name);
-
-            $.magnificPopup.open({
-                items: {
-                    src: '#custom-content',
-                    type: 'inline'
-                },
-                callbacks : {
-                    close: function(){
-                        console.log("close");
-                        $('.portfolio-slider').data('owlCarousel').destroy();
-                    }
-                }
-            });
-        }
     }
 })
 
@@ -282,7 +263,7 @@ Vue.component("c-portfolio-filter",
 Vue.component("c-portfolio", 
 {
     template : 
-    '<section id="portfolio" class="module paddingb-none">\
+    '<section id="portfolio" class="module paddingb-none" v-once>\
         <div class="container">\
             <div class="row">\
                 <div class="col-sm-6 col-sm-offset-3">\
@@ -306,26 +287,19 @@ Vue.component("c-portfolio",
         <ul class="portfolio-items-container">\
             <li is="c-portfolio-item"\
                 v-for="portfolio in portfolios"\
-                :portfolio="portfolio"\
-                v-model="clickPortfolioName"></li>\
+                :portfolio="portfolio"></li>\
         </ul>\
     </section>',
-    // props : [ "currentPopup" ],
     data : function(){
         return portfolio;
     },
-    mounted : portfolioMounted,
-    watch : {
-        "clickPortfolioName" : function(){
-            this.$emit("input", this.clickPortfolioName);
-        }
-    }
+    mounted : portfolioMounted
 })
 
 Vue.component("c-contact-form",
 {
     template : 
-    '<form id="contact-form" role="form" method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLScuZAKH_x9TdlszJ3dk-sCitqTc4Mj2CCeBJmo9L9glOdQtMQ/formResponse">\
+    '<form id="contact-form" role="form" method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLScuZAKH_x9TdlszJ3dk-sCitqTc4Mj2CCeBJmo9L9glOdQtMQ/formResponse" v-once>\
         <div class="ajax-hidden">\
             <div class="form-group wow fadeInUp">\
                 <label class="sr-only" for="name">*姓名</label>\
@@ -370,7 +344,7 @@ Vue.component("c-contact-form",
 Vue.component("c-contact",
 {
     template :
-    '<section id="contact" class="module">\
+    '<section id="contact" class="module" v-once>\
         <div class="container">\
             <div class="row">\
                 <div class="col-sm-6 col-sm-offset-3">\
@@ -419,7 +393,7 @@ Vue.component("c-footer-social",
 Vue.component("c-footer",
 {
     template : 
-    ' <footer id="footer">\
+    ' <footer id="footer" v-once>\
         <div class="container">\
             <div class="row">\
                 <div class="col-sm-12">\
@@ -456,95 +430,5 @@ Vue.component("c-scrollup",
                 scrollTop: $(anchor.attr('href')).offset().top
             }, 1000);
         }
-    }
-})
-
-Vue.component("c-portfolio-detaiil-img",
-{
-    template : 
-    '<div class="item">\
-        <img :src="imgSrc" :alt="title">\
-    </div>',
-    props : [ "img", "imgFolder", "title" ],
-    computed : {
-        imgSrc : function(){
-            return "portfolio/images/{{imgFolder}}/{{img}}"
-                    .replace("{{imgFolder}}", this.imgFolder)
-                    .replace("{{img}}", this.img);
-        }
-    }
-})
-
-Vue.component("c-portfolio-detaiil",
-{
-    template : 
-    '<div id="custom-content" class="white-popup-block mfp-hide">\
-        <div class="row">\
-            <div class="col-sm-12 text-center">\
-                <div class="owl-carousel owl-theme portfolio-slider">\
-                    <div is="c-portfolio-detaiil-img"\
-                         v-for="img in imgs"\
-                         :img="img"\
-                         :imgFolder="imgFolder"\
-                         :title="title"></div>\
-                </div>\
-            </div>\
-        </div>\
-        <div class="popup-content">\
-            <div class="row">\
-                <div class="col-sm-12">\
-                    <div class="popup-header">\
-                        <h2 class="popup-title">{{service}}</h2>\
-                        <div class="popup-subtitle">{{title}}</div>\
-                        <div class="popup-line"></div>\
-                    </div>\
-                </div>\
-            </div>\
-            <div class="row">\
-                <div class="col-sm-12" v-html="desc"></div>\
-            </div>\
-        </div>\
-        <section class="popup-callout">\
-            <div class="row">\
-                <div class="col-sm-12">\
-                    <h3>喜歡我的作品?</h3>\
-                    <div class="module-line"></div>\
-                </div>\
-                <div class="col-sm-12">\
-                    <div class="btn-list">\
-                        <a href="index.html#services" class="btn btn-custom-3">Service 我們的服務</a>\
-                        <a href="index.html#contact" class="btn btn-custom-4">Contact 聯絡我們</a>\
-                    </div>\
-                </div>\
-            </div>\
-        </section>\
-    </div>',
-    props : [ "portfolio" ],
-    computed : {
-        service : function(){           
-            return this.portfolio.service;
-        },
-        title : function(){
-            return this.portfolio.title;
-        },
-        desc : function(){
-            return this.portfolio.desc;
-        },
-        imgs : function(){
-            return this.portfolio.imgs;
-        },
-        imgFolder : function(){
-            return this.portfolio.imgFolder;
-        }
-    },
-    updated : function(){        
-        $('.portfolio-slider').owlCarousel({
-            navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-            navigation: true,
-            pagination: false,
-            slideSpeed : 300,
-            paginationSpeed : 400,
-            singleItem: true
-        });
     }
 })

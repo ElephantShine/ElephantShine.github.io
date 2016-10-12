@@ -342,8 +342,8 @@ textarea.form-control {
 .btn-custom-3:focus,
 .btn-custom-3:active,
 .btn-custom-3.active {
-    background: #49e2d6;
-    border-color: #49e2d6;
+    background: #683B93;
+    border-color: #683B93;
     color: #FFF;
 }
 
@@ -357,7 +357,8 @@ textarea.form-control {
 .btn-custom-4:focus,
 .btn-custom-4:active,
 .btn-custom-4.active {
-    background: #222;
+    background: #683B93;
+    border-color: #683B93;
     color: #FFF;
 }
 
@@ -759,7 +760,7 @@ textarea.form-control {
 }
 
 .popup-line {
-    background: #49e2d6;
+    background: #6F00C4;
     width: 55px;
     height: 1px;
     margin: 15px auto;
