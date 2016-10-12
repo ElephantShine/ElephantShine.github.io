@@ -26,6 +26,11 @@ var vm = new Vue({
 
         $(".ajax-popup").magnificPopup({
             type: 'ajax',
+            ajax: {
+                settings : {
+                    cache: true
+                }
+            },
             callbacks: {
                 parseAjax: function(mfpResponse) {
                     $.getScript('assets/js/custom-portfolio.js');
