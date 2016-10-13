@@ -867,6 +867,7 @@ button.mfp-close {
 
 .ajax-response {
     text-align: center;
+    padding-top: 10px;
 }
 
 
@@ -1224,4 +1225,12 @@ button.mfp-close {
     line-height: 40px;
     text-align: center;
     font-size: 14px;
+}
+
+select[multiple], select[size] {
+    height: 34px;
+}
+
+.form-group {
+    margin-bottom: 17px;
 }
