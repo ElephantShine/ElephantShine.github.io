@@ -1,8 +1,8 @@
 
 var homeImgs = [
-    'assets/images/home01.png?20161014',
-    'assets/images/home02.png?20161014',
-    'assets/images/home03.png?20161014'
+    'assets/images/home01.png?v=20161014',
+    'assets/images/home02.png?v=20161014',
+    'assets/images/home03.png?v=20161014'
 ];
 
 var navs = [
@@ -48,9 +48,9 @@ var contact = {
 var footer = {
     copyright : "© 2016 象晴設計 ElephantShine, All Rights Reserved.",
     socials : [
-        { name: "fb", href : "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.elephantshine.com", title : "Share on Facebook", delay : "", icon : "fa-facebook" },
-        { name: "tr", href : "https://twitter.com/intent/tweet?source=https%3A%2F%2Fwww.elephantshine.com&amp;text=:%20https%3A%2F%2Fwww.elephantshine.com", title : "Share on Tweet", delay : ".1s", icon : "fa-twitter" },
-        { name: "g+", href : "https://plus.google.com/share?url=https%3A%2F%2Fwww.elephantshine.com", title : "Share on Google+", delay : ".2s", icon : "fa-google-plus" },
+        { name: "fb", title : "Share on Facebook", delay : "", icon : "fa-facebook" },
+        { name: "tr", title : "Share on Tweet", delay : ".1s", icon : "fa-twitter" },
+        { name: "g+", title : "Share on Google+", delay : ".2s", icon : "fa-google-plus" },
     ]
 }
 

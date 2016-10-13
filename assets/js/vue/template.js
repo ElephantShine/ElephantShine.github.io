@@ -374,7 +374,7 @@ Vue.component("c-footer-social",
 {
     template : 
     '<li>\
-        <a :href="social.href" :title="social.title" @click.prevent="openSocial"\
+        <a href="#" :title="social.title" @click.prevent="openSocial"\
             class="wow fadeInUp" :data-wow-delay="social.delay">\
             <i :class="iconClass"></i>\
         </a>\

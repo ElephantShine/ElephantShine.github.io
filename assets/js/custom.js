@@ -28,7 +28,7 @@ var vm = new Vue({
             type: "ajax",
             callbacks: {
                 parseAjax: function(mfpResponse) {
-                    $.getScript("assets/js/custom-portfolio.min.js?20161013");
+                    $.getScript("assets/js/custom-portfolio.js?v=20161014");
                 }
             }
         });
