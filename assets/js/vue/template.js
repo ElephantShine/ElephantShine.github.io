@@ -217,8 +217,8 @@ Vue.component("c-portfolio-item",
             <figcaption>\
                 <a :href="href" class="ajax-popup"></a>\
                 <div class="caption-inner">\
-                    <h3 class="portfolio-item-title">{{serviceCht}}</h3>\
-                    <div class="portfolio-item-desc">{{portfolio.desc}}</div>\
+                    <h3 class="portfolio-item-title">{{portfolio.title}}</h3>\
+                    <div class="portfolio-item-desc">{{portfolio.content}}</div>\
                 </div>\
             </figcaption>\
         </figure>\
@@ -232,19 +232,19 @@ Vue.component("c-portfolio-item",
             return this.portfolio.desc + " Portfolio";
         },
         imgSrc : function(){
-            return "portfolio/images/{{name}}/portfolio-item.png".replace("{{name}}", this.portfolio.name);
+            return "portfolio/images/{{name}}/01.png".replace("{{name}}", this.portfolio.name);
         },
         href : function(){
             return "portfolio/{{name}}.html".replace("{{name}}", this.portfolio.name);
-        },
-        serviceCht: function(){
-
-            var serviceCht = this.portfolio.services.map(function(service) {
-                return serviceMapping[service];
-            });
-
-            return serviceCht.join("、");
         }
+        // serviceCht: function(){
+
+        //     var serviceCht = this.portfolio.services.map(function(service) {
+        //         return serviceMapping[service];
+        //     });
+
+        //     return serviceCht.join("、");
+        // }
     }
 })
 

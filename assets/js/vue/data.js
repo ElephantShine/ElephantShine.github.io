@@ -47,7 +47,8 @@ var portfolio = {
         {
             services : [ "logo", "print" ], 
             name : "Flower-Fruit-Downshifting",
-            desc : "以樸拙的筆劃構成，表現單純、自然，帶出放慢腳步、無毒蔬果之品牌精神。"
+            title : "花果慢活",
+            content : "Flower·Fruit·Downshifting"
         }
     ],
     servicesFilter : [ "logo", "print" ],
@@ -76,9 +77,10 @@ var serviceMapping = {
 
 var portfolios = {
     "Flower-Fruit-Downshifting" : {
-        service : "LOGO設計、印刷輸出",
-        title : "花果慢活 Flower·Fruit·Downshifting",
-        desc : "以樸拙的筆劃構成，表現單純、自然，帶出放慢腳步、無毒蔬果之品牌精神。",
+        service : "花果慢活",
+        title : "Flower·Fruit·Downshifting",
+        desc : "<p>結合花藝與有機蔬果的品牌，視覺部分以樸拙的筆劃表現單純、自然，並以亮色調表現清新的視覺感受。</p>\
+        <p>名片印刷規劃使用頂級象牙卡，平而紮實的紙張，搭配飽和的色彩，質感細膩且典雅。</p>",
         imgs : [ "01.png", "02.png", "03.png", "04.png" ],
         imgFolder : "Flower-Fruit-Downshifting"
     },
