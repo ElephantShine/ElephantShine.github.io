@@ -1,8 +1,8 @@
 
 var homeImgs = [
-    'assets/images/home01.png',
-    'assets/images/home02.png',
-    'assets/images/home03.png'
+    'assets/images/home01.png?20161014',
+    'assets/images/home02.png?20161014',
+    'assets/images/home03.png?20161014'
 ];
 
 var navs = [
