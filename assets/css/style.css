@@ -5,8 +5,8 @@
  * General styles
 /* ---------------------------------------------- */
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
-@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:700,400,300);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:700,400,300);
 body {
     font: 400 12px/1.8 "source-han-sans-traditional", sans-serif, 'Open Sans', serif;
     color: #666;
