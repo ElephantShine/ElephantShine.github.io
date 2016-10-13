@@ -49,9 +49,27 @@ var portfolio = {
             name : "Flower-Fruit-Downshifting",
             title : "花果慢活",
             content : "Flower·Fruit·Downshifting"
+        },
+        {
+            services : [ "logo", "print" ], 
+            name : "Interior-Flower-Life",
+            title : "青晨花實",
+            content : "Interior·Flower·Life"
+        },
+        {
+            services : [ "book" ], 
+            name : "Ocean-Taiwan",
+            title : "水下文化資產叢書",
+            content : "OCEAN TAIWAN"
+        },
+        {
+            services : [ "book" ], 
+            name : "Taishin-Arts",
+            title : "台新藝術獎 藝評集 - 新藝見 音樂舞蹈篇",
+            content : "Taishin Arts Review - Music & Dance"
         }
     ],
-    servicesFilter : [ "logo", "print" ],
+    servicesFilter : [ "logo", "image", "packing", "activity", "product", "book", "wedding", "print" ],
     clickPortfolioName : ""
 };
 
@@ -70,27 +88,12 @@ var footer = {
 }
 
 var serviceMapping = {
-    book : "書籍編排",
     logo : "LOGO設計",
+    image : "形象設計",
+    packing : "包裝設計",
+    activity : "活動文宣",
+    product : "產品型錄",
+    book : "書籍編排",
+    wedding : "婚卡喜帖",
     print : "印刷輸出"
 }
-
-var portfolios = {
-    "Flower-Fruit-Downshifting" : {
-        service : "花果慢活",
-        title : "Flower·Fruit·Downshifting",
-        desc : "<p>結合花藝與有機蔬果的品牌，視覺部分以樸拙的筆劃表現單純、自然，並以亮色調表現清新的視覺感受。</p>\
-        <p>名片印刷規劃使用頂級象牙卡，平而紮實的紙張，搭配飽和的色彩，質感細膩且典雅。</p>",
-        imgs : [ "01.png", "02.png", "03.png", "04.png" ],
-        imgFolder : "Flower-Fruit-Downshifting"
-    },
-    "Interior-Flower-Life" : {
-        service : "LOGO設計",
-        title : "青晨花實 Interior·Flower·Life",
-        desc : '<p>喜歡"青晨"這詞的室內設計師 和喜歡"花實"這兩字的花藝設計師一起創立的"青晨花實工作室"要互相結合，且有氣質.不花俏是兩位女孩兒的要求</p>\
-        <p>實在很有趣邊討論、邊開懷大笑、邊吃漢堡寶腦中想法就這樣浮現出來了LOGO、名片之後，還製作了許多文宣品，過程一樣歡樂有趣，這應該就是所謂的 臭味相投 吧！ ^^。</p>\
-        <p>有室內設計需求，及對花藝有興趣的人也歡迎找這兩位大師好朋友呦！ <a href="https://www.facebook.com/pages/%E9%9D%92%E6%99%A8%E8%8A%B1%E5%AF%A6-Interiorflowerlife-%E5%AE%A4%E5%85%A7%E7%A9%BA%E9%96%93%E8%A6%8F%E5%8A%83%E4%B8%8D%E5%87%8B%E8%8A%B1%E4%B9%BE%E7%87%A5%E8%8A%B1%E8%97%9D/468437866695960" target="_blank">(青晨花實 Interior·Flower·Life)</a></p>',
-        imgs : [ "01.jpg", "02.jpg", "03.jpg" ],
-        imgFolder : "Interior-Flower-Life"
-    }
-};

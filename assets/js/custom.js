@@ -25,15 +25,10 @@ var vm = new Vue({
         wow.init();
 
         $(".ajax-popup").magnificPopup({
-            type: 'ajax',
-            ajax: {
-                settings : {
-                    cache: true
-                }
-            },
+            type: "ajax",
             callbacks: {
                 parseAjax: function(mfpResponse) {
-                    $.getScript('assets/js/custom-portfolio.js');
+                    $.getScript("assets/js/custom-portfolio.min.js?20161013");
                 }
             }
         });

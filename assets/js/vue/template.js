@@ -232,10 +232,10 @@ Vue.component("c-portfolio-item",
             return this.portfolio.desc + " Portfolio";
         },
         imgSrc : function(){
-            return "portfolio/images/{{name}}/01.png".replace("{{name}}", this.portfolio.name);
+            return "portfolio/{{name}}/01.png".replace("{{name}}", this.portfolio.name);
         },
         href : function(){
-            return "portfolio/{{name}}.html".replace("{{name}}", this.portfolio.name);
+            return "portfolio/{{name}}/index.html".replace("{{name}}", this.portfolio.name);
         }
         // serviceCht: function(){
 
