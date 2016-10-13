@@ -40,39 +40,6 @@ var service = {
     ]
 };
 
-var portfolio = {
-    title : "Work 日常的綻放",
-    content : "過去的經驗加上一直存在的熱情，滿足客戶的需求，我們的未來是越來越迷人的風景！",
-    portfolios : [
-        {
-            services : [ "logo", "print" ], 
-            name : "Flower-Fruit-Downshifting",
-            title : "花果慢活",
-            content : "Flower·Fruit·Downshifting"
-        },
-        {
-            services : [ "logo", "print" ], 
-            name : "Interior-Flower-Life",
-            title : "青晨花實",
-            content : "Interior·Flower·Life"
-        },
-        {
-            services : [ "book" ], 
-            name : "Ocean-Taiwan",
-            title : "水下文化資產叢書",
-            content : "OCEAN TAIWAN"
-        },
-        {
-            services : [ "book" ], 
-            name : "Taishin-Arts",
-            title : "台新藝術獎 藝評集 - 新藝見 音樂舞蹈篇",
-            content : "Taishin Arts Review - Music & Dance"
-        }
-    ],
-    servicesFilter : [ "logo", "image", "packing", "activity", "product", "book", "wedding", "print" ],
-    clickPortfolioName : ""
-};
-
 var contact = {
     title : "Contact 歡迎來作客",
     content : "大象，擁有超強的記憶力。歡迎您留下資本資料，讓我們記住您，並與你聯繫！<br>象晴設計‧誠摯款待！"
@@ -97,3 +64,41 @@ var serviceMapping = {
     wedding : "婚卡喜帖",
     print : "印刷輸出"
 }
+
+var portfolio = {
+    title : "Work 日常的綻放",
+    content : "過去的經驗加上一直存在的熱情，滿足客戶的需求，我們的未來是越來越迷人的風景！",
+    servicesFilter : [ "logo", "image", "packing", "activity", "product", "book", "wedding", "print" ],
+    portfolios : [
+        {
+            services : [ "logo", "print" ], 
+            name : "Flower-Fruit-Downshifting",
+            title : "花果慢活",
+            content : "Flower·Fruit·Downshifting"
+        },
+        {
+            services : [ "logo", "print" ], 
+            name : "Interior-Flower-Life",
+            title : "青晨花實",
+            content : "Interior·Flower·Life"
+        },
+        {
+            services : [ "book" ], 
+            name : "Ocean-Taiwan",
+            title : "水下文化資產叢書",
+            content : "OCEAN TAIWAN"
+        },
+        {
+            services : [ "book" ], 
+            name : "Taishin-Arts",
+            title : "台新藝術獎 藝評集 - 新藝見 音樂舞蹈篇",
+            content : "Taishin Arts Review - Music & Dance"
+        },
+        {
+            services : [ "print" ], 
+            name : "Food-Fun",
+            title : "福芳號",
+            content : "FOOD FUN"
+        }
+    ]
+};
