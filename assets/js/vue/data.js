@@ -41,7 +41,8 @@ var service = {
 };
 
 var portfolio = {
-    title : "Work 作品集",
+    title : "Work 日常的綻放",
+    content : "過去的經驗加上一直存在的熱情，滿足客戶的需求，我們的未來是越來越迷人的風景！",
     portfolios : [
         {
             services : [ "logo", "print" ], 

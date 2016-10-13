@@ -270,6 +270,8 @@ Vue.component("c-portfolio",
                     <div class="module-header wow fadeInUp">\
                         <h2 class="module-title">{{title}}</h2>\
                         <div class="module-line"></div>\
+                        <div class="module-subtitle" v-html="content"></div>\
+                        <div class="module-line"></div>\
                     </div>\
                 </div>\
             </div>\
