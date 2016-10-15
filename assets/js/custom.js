@@ -118,13 +118,13 @@
 
     function ShareSocial(){
         $(".shareSocial").click(function(e){
-            e.preventDefault();
-
-            if(event.name === "fb"){
+            e.preventDefault();            
+            var name = $(e.target).data("name");
+            if(name === "fb"){
                 window.open('https://www.facebook.com/sharer/sharer.php?u=' + utility.encodeUrl + '&amp;t=' + utility.encodeUrl);
-            }else if(event.name === "tr"){
+            }else if(name === "tr"){
                 window.open( 'https://twitter.com/intent/tweet?text=' + utility.encodeTitle + ':%20' + utility.encodeUrl);
-            }else if(event.name === "g+"){
+            }else if(name === "g+"){
                 window.open( 'https://plus.google.com/share?url=' + utility.encodeUrl);
             }
         });

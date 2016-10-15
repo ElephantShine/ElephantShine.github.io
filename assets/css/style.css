@@ -1234,3 +1234,7 @@ select[multiple], select[size] {
 .form-group {
     margin-bottom: 17px;
 }
+
+.shareSocial {
+    cursor: pointer;
+}
