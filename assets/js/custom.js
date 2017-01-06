@@ -6,6 +6,19 @@
         'assets/images/home03.png?v=20161014'
     ];
 
+    var hashs = [
+        "Flower-Fruit-Downshifting",
+        "Interior-Flower-Life",
+        "Ocean-Taiwan",
+        "Taishin-Arts",
+        "Food-Fun",
+        "Agile-Tour-Taichung-2015",
+        "Opera-Legend-Der-Ring-des-Nibelungen",
+        "My-First-Piano-Theory",
+        "JOJO-Bridal-Atelier",
+        "Agile-Tour-Taichung-2017"
+    ]
+
     var utility = {
         encodeUrl : encodeURIComponent(document.URL),
         encodeTitle : encodeURIComponent(document.title)
@@ -25,6 +38,7 @@
         Portfolio();
         WowAnimation();
         ShareSocial();
+        GetHashPortfolio();
     });
 
     function AnimatedScrolling(){      
@@ -128,6 +142,24 @@
                 window.open( 'https://plus.google.com/share?url=' + utility.encodeUrl);
             }
         });
+    }
+
+    function GetHashPortfolio(){
+        var hashStr = window.location.hash;
+
+        if(!hashStr
+            || hashs.indexOf(hashStr.substr(1)) < 0){
+            return;
+        }
+
+        $(hashStr).magnificPopup({
+            type: "ajax",
+            callbacks: {
+                parseAjax: function(mfpResponse) {
+                    $.getScript("assets/js/custom-portfolio.js?v=20161014");
+                }
+            }
+        }).magnificPopup("open");
     }
 
 })(jQuery);
