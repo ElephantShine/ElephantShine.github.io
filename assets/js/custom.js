@@ -160,6 +160,8 @@
                 }
             }
         }).magnificPopup("open");
+
+        history.pushState('', document.title, window.location.pathname);
     }
 
 })(jQuery);
