@@ -1,142 +1,195 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://www.elephantshine.com/</loc>
-  <lastmod>2018-05-03T12:04:13+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.elephantshine.com/index.html</loc>
-  <lastmod>2018-05-03T12:04:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.elephantshine.com/Portfolio.html</loc>
-  <lastmod>2018-05-03T12:04:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.elephantshine.com/Contact.html</loc>
-  <lastmod>2018-05-03T12:04:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.elephantshine.com/Blog/20170828_PaulSmith.html</loc>
-  <lastmod>2018-05-03T12:04:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.elephantshine.com/Portfolio/Flower-Fruit-Downshifting.html</loc>
-  <lastmod>2018-05-03T12:04:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.elephantshine.com/Portfolio/Interior-Flower-Life.html</loc>
-  <lastmod>2018-05-03T12:04:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.elephantshine.com/Portfolio/Food-Fun.html</loc>
-  <lastmod>2018-05-03T12:04:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.elephantshine.com/Portfolio/JOJO-Bridal-Atelier.html</loc>
-  <lastmod>2018-05-03T12:04:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.elephantshine.com/Portfolio/Agile-Tour-Taichung-2015.html</loc>
-  <lastmod>2018-05-03T12:04:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.elephantshine.com/Portfolio/Opera-Legend-Der-Ring-des-Nibelungen.html</loc>
-  <lastmod>2018-05-03T12:04:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.elephantshine.com/Portfolio/Ocean-Taiwan.html</loc>
-  <lastmod>2018-05-03T12:04:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.elephantshine.com/Portfolio/Taishin-Arts.html</loc>
-  <lastmod>2018-05-03T12:04:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.elephantshine.com/Portfolio/My-First-Piano-Theory.html</loc>
-  <lastmod>2018-05-03T12:04:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.elephantshine.com/Portfolio/Agile-Tour-Taichung-2017.html</loc>
-  <lastmod>2018-05-03T12:04:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.elephantshine.com/Portfolio/Rainboots.html</loc>
-  <lastmod>2018-05-03T12:04:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.elephantshine.com/Portfolio/Food-Fun-Cherry-Blossoms.html</loc>
-  <lastmod>2018-05-03T12:04:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.elephantshine.com/Portfolio/Wenny-Music.html</loc>
-  <lastmod>2018-05-03T12:04:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.elephantshine.com/Portfolio/My-Scheming.html</loc>
-  <lastmod>2018-05-03T12:04:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.elephantshine.com/Portfolio/Cb-Show-Food.html</loc>
-  <lastmod>2018-05-03T12:04:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.elephantshine.com/Portfolio/Cb-Show-Fit.html</loc>
-  <lastmod>2018-05-03T12:04:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.elephantshine.com/Portfolio/DP-Binder.html</loc>
-  <lastmod>2018-05-03T12:04:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.elephantshine.com/Portfolio/JOJO-Bridal-Atelier-Folder.html</loc>
-  <lastmod>2018-05-03T12:04:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.elephantshine.com/Portfolio/Water-Soil-Conservation.html</loc>
-  <lastmod>2018-05-03T12:04:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.elephantshine.com/Portfolio/My-First-Music-Learning-Cards.html</loc>
-  <lastmod>2018-05-03T12:04:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.elephantshine.com/Portfolio/Turkish-Map-Fold-Wedding-Card.html</loc>
-  <lastmod>2018-05-03T12:04:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-
-
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/Quanta</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/piano-game-book</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/NMNS-UpStickers</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/GREEN-briefing</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/taiwan-fish</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/sheng-zhan</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/coffee-box</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/ARTC-2022-special-issue</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/ss-car</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/ARTC-briefing</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/FS-TaipeiPLAS</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/zero-banner</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/HAMAK-car</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/nuan-xin</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/NMNS-NFT</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/NMNS-tape</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/qiao-jiang-tea</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/ARTC-image</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/Noah-Music-Studio</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/NMNS-TSF</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/NMNS-Fairy-Lily-Silk-scarf</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/Calligraphy-Book</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/Kerboguan</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/Red-Bean-Drink</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/Green-Life-Time</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/Food-Fun</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/Turkish-Map-Fold-Wedding-Card</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/My-First-Music-Learning-Cards</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/Water-Soil-Conservation</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/JOJO-Bridal-Atelier-Folder</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/DP-Binder</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/Cb-Show-Fit</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/Cb-Show-Food</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/My-Scheming</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/Food-Fun-Cherry-Blossoms</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/Rainboots</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/Agile-Tour-Taichung-2017</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/My-First-Piano-Theory</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/Interior-Flower-Life</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/Wenny-Music</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/Flower-Fruit-Downshifting</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/Agile-Tour-Taichung-2015</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/JOJO-Bridal-Atelier</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/Ocean-Taiwan</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/Taishin-Arts</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio/Opera-Legend-Der-Ring-des-Nibelungen</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Contact</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.elephantshine.com/Portfolio</loc>
+    <lastmod>2023-10-05T12:36+00:00</lastmod>
+  </url>
 </urlset>
