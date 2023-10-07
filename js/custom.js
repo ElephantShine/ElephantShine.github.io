@@ -6,7 +6,7 @@
      * Preloader
     /* ---------------------------------------------- */
 
-    $(window).load(function () {
+    $(window).on('load', function () {
         $('.page-loader').delay(350).fadeOut('slow');
     });
 
@@ -19,8 +19,6 @@
         var hero = $('#hero'),
             modules = $('.module-hero, .module, .module-small'),
             navbar = $('.navbar-custom'),
-            worksgrid = $('#works-grid'),
-            filters = $('#filters'),
             wrapper = $('.wrapper'),
             footer = $('.footer'),
             mobileTest;
@@ -105,34 +103,6 @@
             navbar.removeClass('navbar-transparent');
         }
 
-        /* ---------------------------------------------- /*
-         * Portfolio
-        /* ---------------------------------------------- */
-
-        /*
-        $('a', filters).on('click', function () {
-            var selector = $(this).attr('data-filter');
-
-            $('.current', filters).removeClass('current');
-            $(this).addClass('current');
-
-            worksgrid.isotope({
-                filter: selector
-            });
-
-            return false;
-        });
-
-        $(window).on('resize', function () {
-            worksgrid.imagesLoaded(function () {
-                worksgrid.isotope({
-                    layoutMode: 'masonry',
-                    itemSelector: '.work-item',
-                    transitionDuration: '0.3s',
-                });
-            });
-        }).resize();
-*/
         /* ---------------------------------------------- /*
          * Owl sliders
         /* ---------------------------------------------- */
